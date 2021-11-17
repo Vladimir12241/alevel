@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style> figure {
+        color: blue;
+    }</style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wraper">
+        <!--Level one-->
+        <div class="level-one">
+            <hr class="line">
+            <h3 class="level-name">Level One</h3>
+            <figure style="color: red">
+                <blockquote cite="https://www.huxley.net/bnw/four.html" >
+                    <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+                </blockquote>
+                <figcaption>—Aldous Huxley, <cite>Brave New World</cite></figcaption>
+            </figure>
+            <!--Since the page loads from top to bottom, this means that the last added styles will take precedence in this case, 
+                which means that styles added exactly to the tag will have more meaning than styles placed in the <style> on the head.
+                and the <styles> from the head will be on top of the linked style.css file-->
+        </div>
+        <!--Level two-->
+        <div class="leve-two">
+            <hr class="line">
+            <h3 class="level-name">Level Two</h3>
+            <div class="holder">
+                <h1>Title</h1>
+                <ul class="list">
+                  <li>
+                    <a href="#">link1</a>
+                    <ul>
+                      <li><a href="#">link2</a></li>
+                      <li><a href="#">link3</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="https://www.youtube.com/">link4</a></li>
+                  <li><a href="https://validator.w3.org/">link5</a></li>
+                  <li><a href="#">link6</a></li>
+                </ul>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, accusamus.</p>
+                <h1>Title</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+        </div>
+        <!--Level three-->
+        <div class="leve-three">
+            <hr class="line">
+            <h3 class="level-name">Level Three</h3>
+            <div class="text-box">
+                <h3>Покрасьте меня в розовый цвет (color:pink).</h3>
+                <p>Данный элемент должен остаться неоформленным.</p>
+                <p id='greycol'>Покрасьте меня в серый цвет (color:grey).</p>
+                <div>Данный элемент должен остаться неоформленным.</div>
+                <div><p>Покрасьте меня в красный цвет (color:red).</p></div>
+                <h3>Данный элемент должен остаться неоформленным.</h3>
+                <p>Покрасьте меня в зеленый цвет (color:green).</p>
+                <p class='yellow'>Покрасьте меня в желтый цвет (color:yellow).</p>
+            </div>
+        </div>
+        <!--Level for-->
+        <div class="leve-for">
+            <hr class="line">
+            <h3 class="level-name">Level For</h3>
+            <div class="png-box"></div>
+            
+        </div>
+    </div>
+</body>
+</html>

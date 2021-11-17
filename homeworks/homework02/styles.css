@@ -1,0 +1,83 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before
+*::after {
+    box-sizing: inherit;
+}
+
+.line{
+    border: 4px solid black;
+}
+
+figure{
+    color: green;
+}
+blockquote {
+    margin: 0;
+
+}
+
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+.list a[href^="https"]{
+    color: red;
+}
+
+.list>:last-child a {
+    color: green;
+}
+
+.holder ul+p{
+    font-size: 26px;
+}
+
+.text-box>:first-child {
+    color: pink;
+}
+
+.text-box>div>p{
+    color: red;
+}
+#greycol{
+    color: grey;
+}
+
+.text-box :nth-child(7){
+    color: green;
+}
+
+.yellow{
+    color: yellow;
+}
+
+.png-box{
+    padding: 300px;
+    background: 
+    /* Lamp */
+    url(https://www.freeiconspng.com/uploads/lamp-png-0.png)
+        top/ auto 10% repeat-x,
+    /* Grass */
+    url(https://www.freeiconspng.com/uploads/grass-png-images-pictures-transparent-28.png)
+        bottom / auto 20% repeat-x,
+    /*Needles (EZHIK) */    
+    url(https://vignette.wikia.nocookie.net/mashaandthebear/images/e/e0/%D0%81%D0%B6%D0%B8%D0%BA.png/revision/latest?cb=20180209130328&path-prefix=ru)
+        left / auto 5% repeat-y,
+    /* Donut */
+    url(https://avatanplus.com/files/resources/mid/58eb07b830eab15b56162788.png)
+        right / auto 5% repeat-y,
+    /*House*/
+     url(https://img2.goodfon.ru/wallpaper/big/0/5b/pole-zelen-trava-dom-derevya.jpg) 
+        center/ auto 75% no-repeat;
+    background-color: green;
+}
