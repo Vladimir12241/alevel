@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log('Exercise 1')
+            for ( let i = 1; i <= 10; i++) {  
+            if (i % 3 == 0) {
+                console.log(i + 'FizBuz')        
+            } else if (i % 2 == 0) {
+                console.log(i + 'Fiz')
+            } else (
+                console.log(i + 'Buz')
+            ) } 
+
+        console.log('Exercise 2');
+            function factorial(n) {
+            return (n != 1) ? n * factorial(n-1) : 1
+            } console.log ('Ваш факториал ' + factorial(10) )
+          
+        
+        console.log('Exercise 3')
+            const sheetsInReamPaper = 500;
+            const consumptionPerWeek = 1200;
+            const weeksAmount = 8;
+            let packs= consumptionPerWeek * weeksAmount / sheetsInReamPaper;
+            let totalPackages = 1;
+            for (totalPackages = 1; totalPackages <= packs; totalPackages + 1 ) {
+                totalPackages = totalPackages + 1;
+            } console.log('Нужно ' + totalPackages + ' упаковок')
+
+        console.log('Exercise 4')
+            const roomsOnFloor = 3;
+            const floors = 9;
+            const roomNumber = 456;
+            const minimumRoom = 100;
+            const maximumRoom = 1000;
+            let entrance = 1;
+            let currentFlor = 1;
+                if (roomNumber < minimumRoom ) {
+                    console.log ( 'В этом комплексе нет таких квартир!')
+                    entrance = 'ERROR';
+                    currentFlor = 'ERROR';
+                } else if ( roomNumber > maximumRoom  ) {
+                    console.log ( 'Ваша квартира в соседнем комплексе!')
+                    entrance = 'ERROR';
+                    currentFlor = 'ERROR';
+                } else
+                    for ( let currentRoom = minimumRoom + 1 ; currentRoom <= roomNumber; currentRoom + 1 ) {
+                    if ( (currentRoom - minimumRoom)   % (floors * roomsOnFloor) == 0 && (currentRoom - minimumRoom) % roomsOnFloor == 0 ) {
+                        currentRoom = currentRoom + 1;
+                        currentFlor = currentFlor - (floors - 1)
+                        entrance = entrance + 1;
+                    } else if ( (currentRoom - minimumRoom) % roomsOnFloor == 0 ) {
+                        currentRoom = currentRoom + 1;
+                        currentFlor = currentFlor +1;
+                    } else if ( (currentRoom - minimumRoom) % (floors * roomsOnFloor) == 0) {
+                        currentRoom = currentRoom + 1;
+                        entrance = entrance + 1;
+                    } else ( currentRoom = currentRoom + 1) }
+            console.log ( 'Ваш подъезд ' + entrance)
+            console.log ( 'Ваш этаж ' +  currentFlor)
+    
+        console.log('Exercise 5')
+            function pyramid (n = 6) { 
+            const columnLength = (n * 2) - 1; 
+            let middle = Math.floor(columnLength / 2)
+
+            for(let row = 0; row < n; row++) { 
+                let symbols = '';
+                for(let col = 0; col < columnLength; col++) { 
+                    if(middle - row <= col && middle + row >= col ) {
+                        symbols += '#';
+                    } else {
+                        symbols += '-';
+                    }
+                }
+                console.log(symbols);
+                }
+            }
+            pyramid ();
+
+
+            function pyramidTwoo (n = 8) { 
+            const columnLength = (n * 2) - 1; 
+            let middle = Math.floor(columnLength / 2)
+
+            for(let row = 0; row < n; row++) { 
+                let symbols = '';
+                for(let col = 0; col < columnLength; col++) { 
+                    if(middle - row <= col && middle + row >= col ) {
+                        symbols += '#';
+                    } else {
+                        symbols += '-';
+                    }
+                }
+                console.log(symbols);
+                }
+            }
+            pyramidTwoo ();
+        
+    </script>
+</body>
+</html>

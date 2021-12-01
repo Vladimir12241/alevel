@@ -28,10 +28,10 @@
                     </label>
                     <ul class="nav-list">
                         <li class="list-item"><a href="#">ГЛАВНАЯ</a></li>
-                        <li class="list-item"><a href="#">ОБ АВТОРЕ</a></li>
-                        <li class="list-item"><a href="#">РАБОТЫ</a></li>
-                        <li class="list-item"><a href="#">ПРОЦЕСС</a></li>
-                        <li class="list-item"><a href="#">КОНТАКТИ</a></li>
+                        <li class="list-item"><a href="#about">ОБ АВТОРЕ</a></li>
+                        <li class="list-item"><a href="#works">РАБОТЫ</a></li>
+                        <li class="list-item"><a href="#process">ПРОЦЕСС</a></li>
+                        <li class="list-item"><a href="#text-me">КОНТАКТИ</a></li>
                         </ul>
                     </nav>
             </div>
@@ -51,7 +51,7 @@
                 </div>
             </div>
         </header>
-        <div class="main">
+        <main class="main">
             <div class="top-text">
                 <h2>Обо мне</h2>
                 <p>Lorem Ipsum - это текст-"рыба",
@@ -60,17 +60,54 @@
                     текстов на латинице с начала XVI века.
                 </p>
             </div>
-            <div class="forty-projects">
-                <ul class="proj-list">
-                    <li class="proj-item"><i class="icon-numbers__item"></i></li>
-                    <li class="proj-item"><i class="icon-numbers__item"></i></li>
-                    <li class="proj-item"><i class="icon-numbers__item"></i></li>
-                    <li class="proj-item"><i class="icon-numbers__item"></i></li>
-                    <li class="proj-item"><i class="icon-numbers__item"></i></li>
-                    <li class="proj-item"><i class="icon-numbers__item"></i></li>
-                </ul>
-            </div>
-            <div class="my-id">
+            <section class="forty-projects" id="works">
+                <div class="proj-list">
+                    <div class="proj-item">
+                        <i class="icon-project"></i>
+                        <div class="proj-content">
+                            <h3>40+</h3>
+                            <p>проектов</p>
+                        </div>
+                    </div>
+                    <div class="proj-item">
+                        <i class="icon-project"></i>
+                        <div class="proj-content">
+                            <h3>40+</h3>
+                            <p>проектов</p>
+                        </div>
+                    </div>
+                    <div class="proj-item">
+                        <i class="icon-project"></i>
+                        <div class="proj-content">
+                            <h3>40+</h3>
+                            <p>проектов</p>
+                        </div>
+                    </div>
+                    <div class="proj-item">
+                        <i class="icon-project"></i>
+                        <div class="proj-content">
+                            <h3>40+</h3>
+                            <p>проектов</p>
+                        </div>
+                    </div>
+                    <div class="proj-item">
+                        <i class="icon-project"></i>
+                        <div class="proj-content">
+                            <h3>40+</h3>
+                            <p>проектов</p>
+                        </div>
+                    </div>
+                    <div class="proj-item">
+                        <i class="icon-project"></i>
+                        <div class="proj-content">
+                            <h3>40+</h3>
+                            <p>проектов</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>    
+            <section class="my-id" id="about">
                 <div class="my-photo">
                     <img src="img/Rectangle3.png" alt="my-photo">
                 </div>
@@ -91,8 +128,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="my-work">
+            </section>
+            <section class="my-work" id="process">
                 <div class="work-text">
                     <h2>Как я работаю</h2>
                     <p>Lorem Ipsum - это текст-"рыба",
@@ -102,95 +139,86 @@
                     </p>
                 </div>
                     <div class="video-container">
-                    <video  class="video" poster="img/matrix.png" controls>
-                        <!-- <source class="play" src="img/Matrix.mp4" type="video/mp4"> -->
+                    <video class="video" poster="img/matrix.png" controls>
+                        <source class="play" src="img/Matrix.mp4" type="video/mp4">
                         </video>
-                    <span id="pause"></span>
-                    </div>
-            </div>
+                        <span id="pause"></span>
+                        </div>
+        
+            </section>
             <div class="img-box">
-                <ul class="img-list">
-                    <li>
-                        <div class="img-item1 img-item">
-                            <img src="img/Rectangle7.png" alt="#">
-                            <div class="hover"></div>
+                <div class="img-list">
+                        <div class="img-item">
+                            <img src="img/Rectangle7.png" alt="#process">
+                            <div class="hover">
+                                <a class="hov-link" href="#process"></a>
+                            </div>
                         </div>
-
-                    </li>
-                    <li>
-                        <div class="img-item2 img-item">
+                        <div class="img-item">
                             <img src="img/Rectangle7.3.png" alt="#">
-                            <div class="hover"></div>
+                            <div class="hover">
+                                <a class="hov-link" href="#process"></a>
+                            </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="img-item2 img-item">
+                        <div class="img-item">
                             <img src="img/Rectangle7.3.png" alt="#">
-                            <div class="hover"></div>
+                            <div class="hover">
+                                <a class="hov-link" href="#process"></a>
+                            </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="img-item1 img-item">
+                        <div class=" img-item">
                             <img src="img/Rectangle7.png" alt="#">
-                            <div class="hover"></div>
+                            <div class="hover">
+                                <a class="hov-link" href="#process"></a>
+                            </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="img-item1 img-item">
+                        <div class="img-item">
                             <img src="img/Rectangle7.png" alt="##">
-                            <div class="hover"></div>
+                            <div class="hover">
+                                <a class="hov-link" href="#process"></a>
+                            </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="img-item2 img-item">
+                        <div class="img-item">
                             <img src="img/Rectangle7.3.png" alt="#">
-                            <div class="hover"></div>
+                            <div class="hover">
+                                <a class="hov-link" href="#process"></a>
+                            </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="img-item2 img-item">
+                        <div class=" img-item">
                             <img src="img/Rectangle7.3.png" alt="#">
-                            <div class="hover"></div>
+                            <div class="hover">
+                                <a class="hov-link" href="#process"></a>
+                            </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="img-item1 img-item">
+                        <div class="img-item">
                             <img src="img/Rectangle7.png" alt="#">
-                            <div class="hover"></div>
+                            <div class="hover">
+                                <a class="hov-link" href="#process"></a>
+                            </div>
                         </div>
-                    </li>
-
-                </ul>
-                <ul class="companys-logo">
-                    <li>
+                </div>
+                <div class="companys-logo">
                         <div class="comp-item">
                             <a href="https://www.microsoft.com/" target="blank">
                                 <img src="img/Rectangle9.2.png" alt="#">
                             </a>
                         </div>
-                    </li>
-                    <li>
                         <div class="comp-item">
                             <a href="https://www.microsoft.com/" target="blank">
                                 <img src="img/Rectangle9.2.png" alt="#">
                             </a>
                         </div>
-                    </li>
-                    <li>
                         <div class="comp-item">
                             <a href="https://www.microsoft.com/" target="blank">
                                 <img src="img/Rectangle9.2.png" alt="#">
                             </a>
                         </div>
-                    </li>
-                    <li>
                         <div class="comp-item">
                             <a href="https://www.microsoft.com/" target="blank">
                                 <img src="img/Rectangle9.2.png" alt="#">
                             </a>
                         </div>
-                    </li>
-                </ul>
+                </div>
             </div>
             <div class="request" id="text-me">
                 <div class="request-text">
@@ -200,8 +228,8 @@
                         Lorem Ipsum является стандартной "рыбой" для
                         текстов на латинице с начала XVI века.</p>
                 </div>
-                <div class="request-form">
-                    <form class="form-box">
+                <div class="request-form" >
+                    <form class="form-box" action="#text-me">
                     <input class="name-text" type="text" placeholder="Ваше имя">
                     <input class="email" type="email" name="#" id="#" placeholder="Ваш e-mail">
                         <div class="form-text">
@@ -210,34 +238,32 @@
                             </div>
                           </div>
                     
-                    <div class="inbox-action">
+                    <div class="inbox-action" >
                         <input class="inbox-button submit" type="submit"  value="ОТПРАВИТЬ">
                     </div>
                     </form>
                 </div>
             </div>
-        </div>
+        </main>
         <footer class="footer">
             <div class="user">
                 <h3>Иванов Иван</h3>
                 <p>(с) 2018. Все права защищены.</p>
             </div>
-            <div class="social">
-                <ul class="link">
-                    <li class="link-item">
+                <div class="link">
+                    <div class="link-item">
                        <a href="https://www.google.com/" target="blank"><i class="icon-Vector"></i>
                        </a>
-                    </li>
-                    <li class="link-item">
+                    </div>
+                    <div class="link-item">
                         <a href="https://www.google.com/" target="blank"><i class="icon-Vector"></i>
                         </a>
-                    </li>
-                    <li class="link-item">
+                    </div>
+                    <div class="link-item">
                         <a href="https://www.google.com/" target="blank"><i class="icon-Vector"></i>
                         </a>
-                    </li>
-                </ul>
-            </div>
+                    </div>
+                </div>
         </footer>
     </div>
 </body>

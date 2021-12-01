@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    console.log('Exercise 1')
+        
+        const citiesAndCountries = {
+            'Киев': 'Украина',
+            'Нью-Йорк': 'США',
+            'Амстердам': 'Нидерланды',
+            'Берлин': 'Германия',
+            'Париж': 'Франция',
+            'Лиссабон': 'Португалия',
+            'Вена': 'Австрия',
+        };
+        const result  = [];
+        Object.entries(citiesAndCountries).forEach(([key, value]) => result.push (`${key} - это ${value}`));
+        console.log(result);
+
+    console.log('Exercise 2')
+
+        function getArray (a){
+        const array = [];
+        const arraysCount = 3;
+        let n = 1; 
+        for (let i = 1; i <= Math.floor(a / arraysCount); i++ ){
+            let arr = [];
+            for (let f = 1; f <= arraysCount; f++ ) {
+                arr.push(n);
+                n = n + 1;
+            } array.push(arr)
+
+        } console.log(array)
+        }
+        getArray (9);
+
+
+
+    console.log('Exercise 3')
+        const namesOfDays = {
+            ru: ['Понедельник', 'Вторник', 'Среда', `Четверг`, `Пятница`, `Суббота`, 'Воскресенье'],
+            en: ['Monday', 'Tuesday', 'Wednesday', `Thursday`, ` Friday`, `Saturday`, 'Sunday'],
+        }
+        
+        function getNameOfDay(){
+            const lang = 'ru';
+            const day = 1;
+            let myDays = day - 1;
+            let myDay;
+            if (lang == 'en') {
+                myDay = namesOfDays.en[myDays];
+            } else (myDay = namesOfDays.ru[myDays])
+            console.log('Это - ' + myDay)
+        }
+        getNameOfDay()
+
+        // console.log('Exercise 4')
+
+
+    </script>
+</body>
+</html>
