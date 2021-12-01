@@ -60,7 +60,19 @@
         }
         getNameOfDay()
 
-        // console.log('Exercise 4')
+    console.log('Exercise 4')
+
+    let arr = [12, 898, 899, 900]
+        console.log(sumTwoo(arr))
+        function sumTwoo(array) {
+            return array.slice().sort((a, b) => a - b).slice(0, 2).reduce((a, b) => a + b);
+        }
+
+    console.log('Exercise 5')
+        const test = [1, 1, 1, 0, 0, 1];
+        let bin = test.join('');
+        let num = parseInt(bin, 2);
+        console.log(num)
 
 
     </script>
